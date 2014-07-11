@@ -1,14 +1,14 @@
 GoPark
 ==========
 
-GoPark is a Go version of [Dpark](https://github.com/douban/dpark), MapReduce(R) alike computing framework supporting iterative computation. 
+GoPark is a Go version of [Dpark][2], MapReduce(R) alike computing framework supporting iterative computation. 
 
-It took some code from old version [GoPark](https://github.com/mijia/gopark) by Jia Mi.
+It took some code from old version [GoPark][3] by Jia Mi.
 
-After read the code of Dpark and old version [GoPark], we got this code.
+After read the code of Dpark and old version [GoPark][3], we got this code. 
+You need a Mesos lib install when build the code under Linux. When under windows, it will not build the mesos mode.
 
 It just a toy code by now, the source code of it may be changed soon after.
-
 Just read the code and have fun.
 
 #### Change from old version:
@@ -68,7 +68,13 @@ func init() {
 - read the cluster code of Spark
 
 #### Acknowledgements
-- [Spark](http://spark.apache.org/) RDD, Cluster
-- [DPark](https://github.com/douban/dpark), porting most of the code
-- [GoPark](https://github.com/mijia/gopark), old version GoPark
+- [Spark][1] RDD, Cluster
+- [DPark][2], porting most of the code
+- [GoPark][3], old version GoPark
+- [mesos-go][4], Go language bindings for Apache Mesos 
+
+[1]: http://spark.apache.org/
+[2]: https://github.com/douban/dpark
+[3]: https://github.com/mijia/gopark
+[4]: https://github.com/mesosphere/mesos-go
 
